@@ -1,6 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Playfair";
+}
+
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+.playfair {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: normal;
+}
+
+p {
+    font-family: "Roboto";
 }
 
 .section {
@@ -8,28 +32,25 @@
     min-height: 100vh;
 }
 
-.about-container {
 
-}
-
-.blue-bg {
+.blue-bg-wrap {
+    filter: drop-shadow(0 -5px 8px gray);
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+}
+
+
+.blue-bg {
+    display: block;
     width: 180%;
     height: 100%;
     background: rgb(113, 230, 222);
     clip-path: polygon(0 0, 100% 0, 0 100%);
-    z-index: -1;
-    filter: drop-shadow(10px 6px -6px black);
-}
-
-.works-container {
-
-}
-
-.contact-container {
-
+   
 }
 
 @media (max-width: 768px) {
